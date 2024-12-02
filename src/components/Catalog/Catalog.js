@@ -49,7 +49,7 @@ const Catalog = () => {
     const postCityData = useCallback(async(city) =>{
         try{
             const postData = {city:city}
-            await axios.post(`http://localhost:4000/send-query-data`, postData)
+            await axios.post(`https://instaweather-backend.onrender.com/send-query-data`, postData)
 
         }
         catch(err){
@@ -63,7 +63,7 @@ const Catalog = () => {
         try{
             setIsLoading(true);
             await delay(500);
-            const res =  await axios.get(`http://localhost:4000/get-city-data/${city}`)
+            const res =  await axios.get(`https://instaweather-backend.onrender.com/get-city-data/${city}`)
                 //stops loading
                 //determines whether data should be transfer to frontend or warning should pop-up
                 //will keep original city if res is bad
@@ -90,7 +90,7 @@ const Catalog = () => {
     //retrieving mongodb user activity data --> frontend
     const getUserWeather = useCallback(async() =>{
         try{
-            const res = await axios.get('http://localhost:4000/get-user-weather-data')
+            const res = await axios.get('https://instaweather-backend.onrender.com/get-user-weather-data')
             setRecCities(res.data)
             console.log('retriving complete: ' + res.data)
 
