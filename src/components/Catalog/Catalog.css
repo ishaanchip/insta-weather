@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.weather-catalog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin:0 auto;
+    min-height: 100vh;
+    height: 100%;
+    font-family: "Rubik", sans-serif;
+    background-color: rgba(4,146,194,1);
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 700px;
+    border: none;
+    padding: 1%;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.search-bar input{
+    width:650px;
+    height:20px;
+    font-size:18px;
+    outline: none;
+    border:none;
+    font-family: "Rubik", sans-serif;
+}
+
+.output-field{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    gap: 150px;
+    margin: 2rem auto;
+    padding: 0 5vw;
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+.pop-up{
+    max-width:0px;
+    width:650px;
+    height:350px;
+    max-height:0px;
+    margin:0 auto;
+    margin-top: 12%;
+    border: none;    
+    border-radius: 2%;
+    text-align: center;
+    color:white;
+    background-color: rgba(214,184,90,1);
+}
+.pop-up button{
+    max-width:0px;
+    width:250px;
+    height:40px;
+    max-height:0px;
+}
+
+.pop-up-clicked{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 650px;
+    max-height: 350px;
+    animation: slideIn 0.4s  ease-in-out forwards;
+}
+
+.pop-up-clicked h3{
+    margin-top:10%;
+}
+
+.pop-up-clicked p{
+    margin:2% 10%;
+}
+
+.pop-up-clicked button{
+    max-width:250px;
+    max-height:40px;
+    text-align: center;
+    border:none;
+    outline: none;
+    margin-top:10%;
+}
+
+@media screen and (max-width: 1050px) {
+    .search-bar {
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    .output-field {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+
+    .pop-up {
+        margin-top: 5%;
+        width: 90%;
+    }
+
+    .pop-up-clicked {
+        max-width: 90%;
+    }
+
+    .weather-catalog {
+        height: auto;
+        min-height: 100%;
+    }
+}
+
+.parent-container {
+    min-height: 100vh;
+    height: 100%;
+}

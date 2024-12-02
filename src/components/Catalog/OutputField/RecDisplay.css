@@ -1,0 +1,43 @@
+.full-city-catalog {
+    width: 35vw;
+    height: 60vh;
+    position: relative;
+    margin-left: 2rem;
+    display: inline-block;
+    padding: 2%;    
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .full-city-catalog {
+        width: 90%;
+        height: 70vh;
+        margin-left: 0;
+        margin-top: 2rem;
+        display: block;
+    }
+}
+
+.rec-cities{
+    cursor: default;
+}
+
+.current-weather-container {
+    width: 35vw;
+    height: 60vh;
+    position: relative;
+    display: inline-block;
+    padding: 2%;    
+    background-color: whitesmoke;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 1050px) {
+    .current-weather-container {
+        width: 90%;
+        height: 70vh;
+        display: block;
+    }
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+.home{
+    display: flex;
+    background-color: rgba(214,184,90,1);
+}
+
+.home-left-side{
+    width:50%;
+    height:100vh;
+    color:whitesmoke;
+    padding:0 10%;
+}
+
+.home-left-side .title{
+    display: flex;
+    align-items: center;
+    margin-top: 35%;
+    margin-bottom: 5%;
+}
+
+.home-left-side h1{
+    font-family: "Rubik", sans-serif;
+    font-weight: 650;
+    font-size: 55px;
+    color:white;
+    margin-right: 4%;
+
+}
+
+.home-left-side p{
+    line-height: 2;
+    font-size: 18px;
+    color:white;
+    font-family: "Rubik", sans-serif;
+
+}
+
+.home-right-side{
+    width:50%;
+    height:100vh;
+    text-align: center;
+    margin:0;
+    padding-top: 20%;
+    background-color: whitesmoke;
+}
+
+.home-right-side button{
+    width:350px;
+    height:85px;
+    text-align: center;
+    border:none;
+    border-radius: 2%;
+    background-color:rgba(4,146,194,0.85);
+    color:white;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight:500;
+    transition: 0.4s ease-in-out;
+}
+
+.home-right-side button:hover{
+    box-shadow: 10px 10px 0px gainsboro;
+    transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 950px) {
+    .home {
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: rgba(214,184,90,1);
+    }
+
+    .home-left-side {
+        width: 100%;
+        height: auto;
+        padding: 20px 5%;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .home-left-side .title {
+        margin-top: 15%;
+        justify-content: center;
+    }
+
+    .home-right-side {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        padding: 40px 0;
+        background-color: transparent;
+    }
+
+    .home-right-side button {
+        width: 90%;
+        max-width: 350px;
+        background-color: white;
+        color: rgba(214,184,90,1);
+        box-shadow: none;
+    }
+
+    .home-right-side button:hover {
+        box-shadow: 10px 10px 0px rgba(255,255,255,0.3);
+    }
+}
