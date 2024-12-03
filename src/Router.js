@@ -5,7 +5,7 @@ import Catalog from './components/Catalog/Catalog'
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
         <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/weather-finder" element={<Catalog/>}></Route>
